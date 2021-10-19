@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C382CCDB271E7A8D0040E930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCDA271E7A8D0040E930 /* AppDelegate.swift */; };
+		C382CCDD271E7A8D0040E930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCDC271E7A8D0040E930 /* SceneDelegate.swift */; };
+		C382CCDF271E7A8D0040E930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCDE271E7A8D0040E930 /* ViewController.swift */; };
+		C382CCE2271E7A8D0040E930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382CCE0271E7A8D0040E930 /* Main.storyboard */; };
+		C382CCE4271E7A8F0040E930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C382CCE3271E7A8F0040E930 /* Assets.xcassets */; };
+		C382CCE7271E7A8F0040E930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382CCE5271E7A8F0040E930 /* LaunchScreen.storyboard */; };
+		C382CCF2271E7A8F0040E930 /* MathWallet5SDK_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCF1271E7A8F0040E930 /* MathWallet5SDK_iOSTests.swift */; };
+		C382CCFC271E7A8F0040E930 /* MathWallet5SDK_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCFB271E7A8F0040E930 /* MathWallet5SDK_iOSUITests.swift */; };
+		C382CCFE271E7A8F0040E930 /* MathWallet5SDK_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCFD271E7A8F0040E930 /* MathWallet5SDK_iOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C382CCEE271E7A8F0040E930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C382CCCF271E7A8D0040E930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C382CCD6271E7A8D0040E930;
+			remoteInfo = "MathWallet5SDK-iOS";
+		};
+		C382CCF8271E7A8F0040E930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C382CCCF271E7A8D0040E930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C382CCD6271E7A8D0040E930;
+			remoteInfo = "MathWallet5SDK-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C382CCD7271E7A8D0040E930 /* MathWallet5SDK-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MathWallet5SDK-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C382CCDA271E7A8D0040E930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C382CCDC271E7A8D0040E930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C382CCDE271E7A8D0040E930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C382CCE1271E7A8D0040E930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C382CCE3271E7A8F0040E930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C382CCE6271E7A8F0040E930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C382CCE8271E7A8F0040E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C382CCED271E7A8F0040E930 /* MathWallet5SDK-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MathWallet5SDK-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C382CCF1271E7A8F0040E930 /* MathWallet5SDK_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWallet5SDK_iOSTests.swift; sourceTree = "<group>"; };
+		C382CCF7271E7A8F0040E930 /* MathWallet5SDK-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MathWallet5SDK-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C382CCFB271E7A8F0040E930 /* MathWallet5SDK_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWallet5SDK_iOSUITests.swift; sourceTree = "<group>"; };
+		C382CCFD271E7A8F0040E930 /* MathWallet5SDK_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWallet5SDK_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C382CCD4271E7A8D0040E930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C382CCEA271E7A8F0040E930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C382CCF4271E7A8F0040E930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C382CCCE271E7A8D0040E930 = {
+			isa = PBXGroup;
+			children = (
+				C382CCD9271E7A8D0040E930 /* MathWallet5SDK-iOS */,
+				C382CCF0271E7A8F0040E930 /* MathWallet5SDK-iOSTests */,
+				C382CCFA271E7A8F0040E930 /* MathWallet5SDK-iOSUITests */,
+				C382CCD8271E7A8D0040E930 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C382CCD8271E7A8D0040E930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C382CCD7271E7A8D0040E930 /* MathWallet5SDK-iOS.app */,
+				C382CCED271E7A8F0040E930 /* MathWallet5SDK-iOSTests.xctest */,
+				C382CCF7271E7A8F0040E930 /* MathWallet5SDK-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C382CCD9271E7A8D0040E930 /* MathWallet5SDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C382CCDA271E7A8D0040E930 /* AppDelegate.swift */,
+				C382CCDC271E7A8D0040E930 /* SceneDelegate.swift */,
+				C382CCDE271E7A8D0040E930 /* ViewController.swift */,
+				C382CCE0271E7A8D0040E930 /* Main.storyboard */,
+				C382CCE3271E7A8F0040E930 /* Assets.xcassets */,
+				C382CCE5271E7A8F0040E930 /* LaunchScreen.storyboard */,
+				C382CCE8271E7A8F0040E930 /* Info.plist */,
+			);
+			path = "MathWallet5SDK-iOS";
+			sourceTree = "<group>";
+		};
+		C382CCF0271E7A8F0040E930 /* MathWallet5SDK-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				C382CCF1271E7A8F0040E930 /* MathWallet5SDK_iOSTests.swift */,
+			);
+			path = "MathWallet5SDK-iOSTests";
+			sourceTree = "<group>";
+		};
+		C382CCFA271E7A8F0040E930 /* MathWallet5SDK-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C382CCFB271E7A8F0040E930 /* MathWallet5SDK_iOSUITests.swift */,
+				C382CCFD271E7A8F0040E930 /* MathWallet5SDK_iOSUITestsLaunchTests.swift */,
+			);
+			path = "MathWallet5SDK-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C382CCD6271E7A8D0040E930 /* MathWallet5SDK-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C382CD01271E7A8F0040E930 /* Build configuration list for PBXNativeTarget "MathWallet5SDK-iOS" */;
+			buildPhases = (
+				C382CCD3271E7A8D0040E930 /* Sources */,
+				C382CCD4271E7A8D0040E930 /* Frameworks */,
+				C382CCD5271E7A8D0040E930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MathWallet5SDK-iOS";
+			productName = "MathWallet5SDK-iOS";
+			productReference = C382CCD7271E7A8D0040E930 /* MathWallet5SDK-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C382CCEC271E7A8F0040E930 /* MathWallet5SDK-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C382CD04271E7A8F0040E930 /* Build configuration list for PBXNativeTarget "MathWallet5SDK-iOSTests" */;
+			buildPhases = (
+				C382CCE9271E7A8F0040E930 /* Sources */,
+				C382CCEA271E7A8F0040E930 /* Frameworks */,
+				C382CCEB271E7A8F0040E930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C382CCEF271E7A8F0040E930 /* PBXTargetDependency */,
+			);
+			name = "MathWallet5SDK-iOSTests";
+			productName = "MathWallet5SDK-iOSTests";
+			productReference = C382CCED271E7A8F0040E930 /* MathWallet5SDK-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C382CCF6271E7A8F0040E930 /* MathWallet5SDK-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C382CD07271E7A8F0040E930 /* Build configuration list for PBXNativeTarget "MathWallet5SDK-iOSUITests" */;
+			buildPhases = (
+				C382CCF3271E7A8F0040E930 /* Sources */,
+				C382CCF4271E7A8F0040E930 /* Frameworks */,
+				C382CCF5271E7A8F0040E930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C382CCF9271E7A8F0040E930 /* PBXTargetDependency */,
+			);
+			name = "MathWallet5SDK-iOSUITests";
+			productName = "MathWallet5SDK-iOSUITests";
+			productReference = C382CCF7271E7A8F0040E930 /* MathWallet5SDK-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C382CCCF271E7A8D0040E930 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					C382CCD6271E7A8D0040E930 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C382CCEC271E7A8F0040E930 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C382CCD6271E7A8D0040E930;
+					};
+					C382CCF6271E7A8F0040E930 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C382CCD6271E7A8D0040E930;
+					};
+				};
+			};
+			buildConfigurationList = C382CCD2271E7A8D0040E930 /* Build configuration list for PBXProject "MathWallet5SDK-iOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C382CCCE271E7A8D0040E930;
+			productRefGroup = C382CCD8271E7A8D0040E930 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C382CCD6271E7A8D0040E930 /* MathWallet5SDK-iOS */,
+				C382CCEC271E7A8F0040E930 /* MathWallet5SDK-iOSTests */,
+				C382CCF6271E7A8F0040E930 /* MathWallet5SDK-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C382CCD5271E7A8D0040E930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C382CCE7271E7A8F0040E930 /* LaunchScreen.storyboard in Resources */,
+				C382CCE4271E7A8F0040E930 /* Assets.xcassets in Resources */,
+				C382CCE2271E7A8D0040E930 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C382CCEB271E7A8F0040E930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C382CCF5271E7A8F0040E930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C382CCD3271E7A8D0040E930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C382CCDF271E7A8D0040E930 /* ViewController.swift in Sources */,
+				C382CCDB271E7A8D0040E930 /* AppDelegate.swift in Sources */,
+				C382CCDD271E7A8D0040E930 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C382CCE9271E7A8F0040E930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C382CCF2271E7A8F0040E930 /* MathWallet5SDK_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C382CCF3271E7A8F0040E930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C382CCFE271E7A8F0040E930 /* MathWallet5SDK_iOSUITestsLaunchTests.swift in Sources */,
+				C382CCFC271E7A8F0040E930 /* MathWallet5SDK_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C382CCEF271E7A8F0040E930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C382CCD6271E7A8D0040E930 /* MathWallet5SDK-iOS */;
+			targetProxy = C382CCEE271E7A8F0040E930 /* PBXContainerItemProxy */;
+		};
+		C382CCF9271E7A8F0040E930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C382CCD6271E7A8D0040E930 /* MathWallet5SDK-iOS */;
+			targetProxy = C382CCF8271E7A8F0040E930 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C382CCE0271E7A8D0040E930 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C382CCE1271E7A8D0040E930 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C382CCE5271E7A8F0040E930 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C382CCE6271E7A8F0040E930 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C382CCFF271E7A8F0040E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C382CD00271E7A8F0040E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C382CD02271E7A8F0040E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ222P77XM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MathWallet5SDK-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mathglobal.simplewallet.MathWallet5SDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C382CD03271E7A8F0040E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ222P77XM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MathWallet5SDK-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mathglobal.simplewallet.MathWallet5SDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C382CD05271E7A8F0040E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ222P77XM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mathglobal.simplewallet.MathWallet5SDK-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathWallet5SDK-iOS.app/MathWallet5SDK-iOS";
+			};
+			name = Debug;
+		};
+		C382CD06271E7A8F0040E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ222P77XM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mathglobal.simplewallet.MathWallet5SDK-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathWallet5SDK-iOS.app/MathWallet5SDK-iOS";
+			};
+			name = Release;
+		};
+		C382CD08271E7A8F0040E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ222P77XM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mathglobal.simplewallet.MathWallet5SDK-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MathWallet5SDK-iOS";
+			};
+			name = Debug;
+		};
+		C382CD09271E7A8F0040E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ222P77XM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mathglobal.simplewallet.MathWallet5SDK-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MathWallet5SDK-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C382CCD2271E7A8D0040E930 /* Build configuration list for PBXProject "MathWallet5SDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382CCFF271E7A8F0040E930 /* Debug */,
+				C382CD00271E7A8F0040E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C382CD01271E7A8F0040E930 /* Build configuration list for PBXNativeTarget "MathWallet5SDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382CD02271E7A8F0040E930 /* Debug */,
+				C382CD03271E7A8F0040E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C382CD04271E7A8F0040E930 /* Build configuration list for PBXNativeTarget "MathWallet5SDK-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382CD05271E7A8F0040E930 /* Debug */,
+				C382CD06271E7A8F0040E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C382CD07271E7A8F0040E930 /* Build configuration list for PBXNativeTarget "MathWallet5SDK-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382CD08271E7A8F0040E930 /* Debug */,
+				C382CD09271E7A8F0040E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C382CCCF271E7A8D0040E930 /* Project object */;
+}
