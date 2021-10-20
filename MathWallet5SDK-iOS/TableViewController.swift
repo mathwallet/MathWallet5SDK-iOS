@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     private let chain: Chain = Chain.BSC
-    private let dapp: DApp = DApp(name: "MathWallet5 Demos", icon: nil)
+    private let dapp: DApp = DApp(name: "MathWallet5 Demos", icon: "https://staticcdn2.maiziqianbao.net/static/img/project/1.jpg")
 
     override func viewDidLoad() {
         super.viewDidLoad()
