@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		C382CCDB271E7A8D0040E930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCDA271E7A8D0040E930 /* AppDelegate.swift */; };
 		C382CCDD271E7A8D0040E930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCDC271E7A8D0040E930 /* SceneDelegate.swift */; };
-		C382CCDF271E7A8D0040E930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCDE271E7A8D0040E930 /* ViewController.swift */; };
+		C382CCDF271E7A8D0040E930 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCDE271E7A8D0040E930 /* TableViewController.swift */; };
 		C382CCE2271E7A8D0040E930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382CCE0271E7A8D0040E930 /* Main.storyboard */; };
 		C382CCE4271E7A8F0040E930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C382CCE3271E7A8F0040E930 /* Assets.xcassets */; };
 		C382CCE7271E7A8F0040E930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382CCE5271E7A8F0040E930 /* LaunchScreen.storyboard */; };
 		C382CCF2271E7A8F0040E930 /* MathWallet5SDK_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCF1271E7A8F0040E930 /* MathWallet5SDK_iOSTests.swift */; };
 		C382CCFC271E7A8F0040E930 /* MathWallet5SDK_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCFB271E7A8F0040E930 /* MathWallet5SDK_iOSUITests.swift */; };
 		C382CCFE271E7A8F0040E930 /* MathWallet5SDK_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CCFD271E7A8F0040E930 /* MathWallet5SDK_iOSUITestsLaunchTests.swift */; };
+		C382CD10271E8E980040E930 /* MathWalletReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CD0F271E8E980040E930 /* MathWalletReq.swift */; };
+		C382CD12271E91290040E930 /* MathWalletResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CD11271E91290040E930 /* MathWalletResp.swift */; };
+		C382CD14271E92AE0040E930 /* MathWalletAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CD13271E92AE0040E930 /* MathWalletAPI.swift */; };
+		C382CD1E271EE33E0040E930 /* String+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CD1D271EE33E0040E930 /* String+JSON.swift */; };
+		C382CD20271EE36D0040E930 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CD1F271EE36D0040E930 /* Dictionary+JSON.swift */; };
+		C382CD22271FBC9B0040E930 /* UIAlertView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382CD21271FBC9B0040E930 /* UIAlertView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		C382CCD7271E7A8D0040E930 /* MathWallet5SDK-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MathWallet5SDK-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382CCDA271E7A8D0040E930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C382CCDC271E7A8D0040E930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C382CCDE271E7A8D0040E930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C382CCDE271E7A8D0040E930 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C382CCE1271E7A8D0040E930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C382CCE3271E7A8F0040E930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C382CCE6271E7A8F0040E930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		C382CCF7271E7A8F0040E930 /* MathWallet5SDK-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MathWallet5SDK-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382CCFB271E7A8F0040E930 /* MathWallet5SDK_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWallet5SDK_iOSUITests.swift; sourceTree = "<group>"; };
 		C382CCFD271E7A8F0040E930 /* MathWallet5SDK_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWallet5SDK_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C382CD0F271E8E980040E930 /* MathWalletReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWalletReq.swift; sourceTree = "<group>"; };
+		C382CD11271E91290040E930 /* MathWalletResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWalletResp.swift; sourceTree = "<group>"; };
+		C382CD13271E92AE0040E930 /* MathWalletAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWalletAPI.swift; sourceTree = "<group>"; };
+		C382CD1D271EE33E0040E930 /* String+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JSON.swift"; sourceTree = "<group>"; };
+		C382CD1F271EE36D0040E930 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
+		C382CD21271FBC9B0040E930 /* UIAlertView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,10 @@
 		C382CCD9271E7A8D0040E930 /* MathWallet5SDK-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C382CD0A271E8D8F0040E930 /* SDK */,
 				C382CCDA271E7A8D0040E930 /* AppDelegate.swift */,
 				C382CCDC271E7A8D0040E930 /* SceneDelegate.swift */,
-				C382CCDE271E7A8D0040E930 /* ViewController.swift */,
+				C382CCDE271E7A8D0040E930 /* TableViewController.swift */,
 				C382CCE0271E7A8D0040E930 /* Main.storyboard */,
 				C382CCE3271E7A8F0040E930 /* Assets.xcassets */,
 				C382CCE5271E7A8F0040E930 /* LaunchScreen.storyboard */,
@@ -125,6 +138,27 @@
 				C382CCFD271E7A8F0040E930 /* MathWallet5SDK_iOSUITestsLaunchTests.swift */,
 			);
 			path = "MathWallet5SDK-iOSUITests";
+			sourceTree = "<group>";
+		};
+		C382CD0A271E8D8F0040E930 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				C382CD1C271EE3250040E930 /* Utils */,
+				C382CD0F271E8E980040E930 /* MathWalletReq.swift */,
+				C382CD11271E91290040E930 /* MathWalletResp.swift */,
+				C382CD13271E92AE0040E930 /* MathWalletAPI.swift */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		C382CD1C271EE3250040E930 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C382CD1D271EE33E0040E930 /* String+JSON.swift */,
+				C382CD1F271EE36D0040E930 /* Dictionary+JSON.swift */,
+				C382CD21271FBC9B0040E930 /* UIAlertView+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C382CCDF271E7A8D0040E930 /* ViewController.swift in Sources */,
+				C382CD1E271EE33E0040E930 /* String+JSON.swift in Sources */,
+				C382CCDF271E7A8D0040E930 /* TableViewController.swift in Sources */,
+				C382CD14271E92AE0040E930 /* MathWalletAPI.swift in Sources */,
+				C382CD20271EE36D0040E930 /* Dictionary+JSON.swift in Sources */,
+				C382CD10271E8E980040E930 /* MathWalletReq.swift in Sources */,
+				C382CD22271FBC9B0040E930 /* UIAlertView+Extension.swift in Sources */,
 				C382CCDB271E7A8D0040E930 /* AppDelegate.swift in Sources */,
 				C382CCDD271E7A8D0040E930 /* SceneDelegate.swift in Sources */,
+				C382CD12271E91290040E930 /* MathWalletResp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -447,6 +487,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +516,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
