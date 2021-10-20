@@ -49,7 +49,6 @@ struct MathWalletReq {
     var action: Action
     var id: String = UUID().uuidString
     var data: [String: Any]
-    var expired: Int = Int(Date().timeIntervalSince1970) + 60
     
     func toDictionary() -> Dictionary<String, Any> {
         return [
@@ -59,8 +58,7 @@ struct MathWalletReq {
             "dapp": self.dapp.toDictionary(),
             "action": self.action.rawValue,
             "id": self.id,
-            "data": self.data,
-            "expired": self.expired
+            "data": self.data
         ]
     }
 }
