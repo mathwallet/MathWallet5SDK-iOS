@@ -17,6 +17,9 @@ struct Chain {
             "id": self.id
         ]
     }
+    
+    static var Ethereum = Chain(type: "EVM", id: "1")
+    static var BSC = Chain(type: "EVM", id: "56")
 }
 
 struct DApp {

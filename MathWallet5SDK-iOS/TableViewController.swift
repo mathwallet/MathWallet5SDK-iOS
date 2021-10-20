@@ -8,7 +8,7 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-    private let chain: Chain = Chain(type: "EVM", id: "1")
+    private let chain: Chain = Chain.BSC
     private let dapp: DApp = DApp(name: "MathWallet5 Demos", icon: nil)
 
     override func viewDidLoad() {
