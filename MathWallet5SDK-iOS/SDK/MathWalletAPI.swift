@@ -28,7 +28,7 @@ struct MathWalletAPI {
         let webpageURL = context.url
         
         // Same Host
-        guard let host = webpageURL.host, webpageURL.host == host else {
+        guard webpageURL.host == self.host else {
             return
         }
         // sw
