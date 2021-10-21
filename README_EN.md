@@ -4,7 +4,7 @@
 ## How to use？
 ### 1、Deploy URL Schemes
 #### Xcode Project info.plist-> URL types -> URL Schemes
-![URL Schemes](https://github.com/MathWallet/MathWallet5SDK-iOS/blob/master/urlschemes.jpeg "URL Schemes")
+![URL Schemes](https://github.com/MathWallet/MathWallet5SDK-iOS/blob/main/urlschemes.jpeg "URL Schemes")
 
 ### 2、Register URL Schemes and set URL
 ```Swift
