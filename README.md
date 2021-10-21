@@ -1,4 +1,4 @@
-# MathWalletSDK-iOS
+# MathWallet5SDK-iOS
 
 [English Readme](https://github.com/mathwallet/MathWallet5SDK-iOS/blob/master/README_EN.md)
 
