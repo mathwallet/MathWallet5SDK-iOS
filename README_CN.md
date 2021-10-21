@@ -1,7 +1,7 @@
 # MathWalletSDK-iOS
 
 #### 基于 SimpleWallet 协议的 iOS SDK
-#### 支持公链 ETH,EOS 等
+#### 支持公链 Ethereum, BSC, HECO，OKExchain 等
 
 
 ## 如何使用？

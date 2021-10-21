@@ -1,6 +1,6 @@
 # MathWalletSDK-iOS
 #### iOS SDK based on SimpleWallet protocol
-#### Supports public chains : ETH,EOS,EOSFORCE etc.
+#### Supports public chains : Ethereum, BSC, HECO，OKExchain etc.
 ## How to use？
 ### 1、Deploy URL Schemes
 #### Xcode Project info.plist-> URL types -> URL Schemes
