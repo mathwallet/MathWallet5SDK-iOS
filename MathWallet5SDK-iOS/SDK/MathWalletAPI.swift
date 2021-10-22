@@ -61,7 +61,7 @@ struct MathWalletAPI {
             return
         }
         // Send
-        guard let urlString = "mathwallet://mathwallet.org?sw=\(jsonString)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+        guard let urlString = "mathwallet5://mathwallet.org?sw=\(jsonString)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
             return
         }
         self.respArray.append((req.id, response))
