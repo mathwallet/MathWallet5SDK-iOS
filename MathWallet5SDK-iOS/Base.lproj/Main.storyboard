@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y1r-zy-x0U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y1r-zy-x0U">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,11 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="1SL-Zo-M3W">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kb7-az-A7B">
+                                    <rect key="frame" x="16" y="0.0" width="382" height="45"/>
+                                    <segments>
+                                        <segment title="EVM"/>
+                                        <segment title="SOLANA"/>
+                                        <segment title="SUBSTATE"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="chainValueChangedEvent:" destination="11k-4O-wPC" eventType="valueChanged" id="1Tw-1P-kJB"/>
+                                    </connections>
+                                </segmentedControl>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="kb7-az-A7B" secondAttribute="trailing" constant="16" id="kMz-2X-GO5"/>
+                                <constraint firstAttribute="bottom" secondItem="kb7-az-A7B" secondAttribute="bottom" id="laz-nj-kKT"/>
+                                <constraint firstItem="kb7-az-A7B" firstAttribute="top" secondItem="1SL-Zo-M3W" secondAttribute="top" id="sLa-hk-3qw"/>
+                                <constraint firstItem="kb7-az-A7B" firstAttribute="leading" secondItem="1SL-Zo-M3W" secondAttribute="leading" constant="16" id="vfv-iI-k54"/>
+                            </constraints>
+                        </view>
                         <sections>
-                            <tableViewSection headerTitle="EVM" id="oVG-Bx-b4g">
+                            <tableViewSection headerTitle="Section" id="oVG-Bx-b4g">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="6hc-5v-Qnq">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="88.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6hc-5v-Qnq" id="SM2-gM-LUN">
                                             <rect key="frame" x="0.0" y="0.0" width="384.5" height="44"/>
@@ -42,7 +66,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="msu-tb-y4g">
-                                        <rect key="frame" x="0.0" y="88.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="132.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="msu-tb-y4g" id="w3k-y0-GXA">
                                             <rect key="frame" x="0.0" y="0.0" width="384.5" height="44"/>
@@ -64,7 +88,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="VYW-uT-Kcl">
-                                        <rect key="frame" x="0.0" y="132.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="176.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VYW-uT-Kcl" id="3HN-PK-hod">
                                             <rect key="frame" x="0.0" y="0.0" width="384.5" height="44"/>
@@ -86,7 +110,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="qct-Jr-n2m">
-                                        <rect key="frame" x="0.0" y="176.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="220.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qct-Jr-n2m" id="Gcg-RH-RSw">
                                             <rect key="frame" x="0.0" y="0.0" width="384.5" height="44"/>
@@ -116,6 +140,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="1e5-lS-JcQ"/>
+                    <connections>
+                        <outlet property="chainSegmentedControl" destination="kb7-az-A7B" id="U8o-Yv-3iC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdE-iG-dH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

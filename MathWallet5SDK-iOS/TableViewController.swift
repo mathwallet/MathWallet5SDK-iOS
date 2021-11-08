@@ -8,7 +8,11 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-    private let chain: Chain = Chain.BSC
+    
+    @IBOutlet weak var chainSegmentedControl: UISegmentedControl!
+    
+    private var selectedChain: Chain = Chain.BSC
+    
     private let dapp: DApp = DApp(name: "MathWallet5 Demos", icon: "https://staticcdn2.maiziqianbao.net/static/img/project/1.jpg")
 
     override func viewDidLoad() {
@@ -16,7 +20,20 @@ class TableViewController: UITableViewController {
         // Do any additional setup after loading the view.
         self.title = "MathWallet5SDK-iOS"
     }
-
+    
+    // MARK: Segmented Control
+    @IBAction func chainValueChangedEvent(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            selectedChain = Chain.BSC
+        case 1:
+            selectedChain = Chain.Solana
+        default:
+            selectedChain = Chain.Polkadot
+        }
+    }
+    
+    
     // MARK: TableView Delegate & DataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,20 +73,40 @@ class TableViewController: UITableViewController {
     
     func loginAction() {
         let data:[String: Any] = [:]
-        let req = MathWalletReq(chain: chain, dapp: dapp, action: .login, data: data)
+        let req = MathWalletReq(chain: selectedChain, dapp: dapp, action: .login, data: data)
         MathWalletAPI.default.sendReq(req) { (resp: MathWalletResq) in
             UIAlertController.show(self, title: resp.code.tip, message: resp.code == .success ? resp.result!.toJsonString() : resp.message!)
         }
     }
     
     func transactionAction() {
-        let data:[String: Any] = [
-            "from":"0x306Bb8081C7dD356eA951795Ce4072e6e4bFdC32",
-            "to":"0x306Bb8081C7dD356eA951795Ce4072e6e4bFdC32",
-            "value":"0x5af3107a4000",
-            "data":"0x"
-        ]
-        let req = MathWalletReq(chain: chain, dapp: dapp, action: .transaction, data: data)
+        var data: [String: Any]
+        switch selectedChain.type {
+        case "EVM":
+            data = [
+                "from":"0x306Bb8081C7dD356eA951795Ce4072e6e4bFdC32",
+                "to":"0x306Bb8081C7dD356eA951795Ce4072e6e4bFdC32",
+                "value":"0x5af3107a4000",
+                "data":"0x"
+            ]
+        case "SOLANA":
+            data = [
+                "instructions": [
+                    "keys": [
+                        [
+                            "pubkey": "GNutLCXQEEcmxkJH5f5rw51bTW2QcLGXqitmN3EaVPoV",
+                            "isSigner": true,
+                            "isWritable": true,
+                        ]
+                    ],
+                    "programId": "11111111111111111111111111111111",
+                    "data": "0x02000000a086010000000000",
+                ]
+            ]
+        default:
+            data = [:]
+        }
+        let req = MathWalletReq(chain: selectedChain, dapp: dapp, action: .transaction, data: data)
         MathWalletAPI.default.sendReq(req) { (resp: MathWalletResq) in
             UIAlertController.show(self, title: resp.code.tip, message: resp.code == .success ? resp.result!.toJsonString() : resp.message!)
         }
@@ -80,7 +117,7 @@ class TableViewController: UITableViewController {
             "address":"0x306Bb8081C7dD356eA951795Ce4072e6e4bFdC32",
             "message":"hello world"
         ]
-        let req = MathWalletReq(chain: chain, dapp: dapp, action: .signMessage, data: data)
+        let req = MathWalletReq(chain: selectedChain, dapp: dapp, action: .signMessage, data: data)
         MathWalletAPI.default.sendReq(req) { (resp: MathWalletResq) in
             UIAlertController.show(self, title: resp.code.tip, message: resp.code == .success ? resp.result!.toJsonString() : resp.message!)
         }
@@ -90,7 +127,7 @@ class TableViewController: UITableViewController {
         let data:[String: Any] = [
             "link":"https://www.mathwallet.org"
         ]
-        let req = MathWalletReq(chain: chain, dapp: dapp, action: .openURL, data: data)
+        let req = MathWalletReq(chain: selectedChain, dapp: dapp, action: .openURL, data: data)
         MathWalletAPI.default.sendReq(req) { (resp: MathWalletResq) in
             UIAlertController.show(self, title: resp.code.tip, message: resp.code == .success ? resp.result!.toJsonString() : resp.message!)
         }

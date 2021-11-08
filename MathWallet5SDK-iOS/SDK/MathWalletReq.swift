@@ -20,6 +20,8 @@ struct Chain {
     
     static var Ethereum = Chain(type: "EVM", id: "1")
     static var BSC = Chain(type: "EVM", id: "56")
+    static var Solana = Chain(type: "SOLANA", id: "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d")
+    static var Polkadot = Chain(type: "SUBSTRATE", id: "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3")
 }
 
 struct DApp {
