@@ -84,3 +84,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         ...
     }
 ```
+
+// Callback
+```javascript
+    // Reference URL Scheme
+    <a href="mathwallet5demos://demos.com?arg1=hello&arg2=world">Callback</a>
+```

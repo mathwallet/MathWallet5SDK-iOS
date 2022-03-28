@@ -90,3 +90,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         ...
     }
 ```
+
+// 网页中使用 App 回调
+```javascript
+    // href 内容见URL Scheme
+    <a href="mathwallet5demos://demos.com?arg1=hello&arg2=world">Callback</a>
+```

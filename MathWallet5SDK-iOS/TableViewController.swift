@@ -125,7 +125,7 @@ class TableViewController: UITableViewController {
     
     func openURLAction() {
         let data:[String: Any] = [
-            "link":"https://www.mathwallet.org"
+            "link":"https://mathwallet-public.s3.us-east-2.amazonaws.com/demos/SimpleWallet.html"
         ]
         let req = MathWalletReq(chain: selectedChain, dapp: dapp, action: .openURL, data: data)
         MathWalletAPI.default.sendReq(req) { (resp: MathWalletResq) in
